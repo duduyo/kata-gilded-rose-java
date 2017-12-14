@@ -24,8 +24,7 @@ class GildedRose {
 		} else if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
 			updateQualityForBackstageItems(item);
 		} else if (item.name.equals("Conjured Mana Cake")) {
-            updateQualityForNormalItems(item);
-            updateQualityForNormalItems(item);
+			updateQualityForConjuredItems(item);
 		} else {
 			updateQualityForNormalItems(item);
 		}
@@ -62,6 +61,10 @@ class GildedRose {
 	private void updateQualityForConjuredItems(Item item) {
 		decreaseQualityIfGreaterThan0(item);
 		decreaseQualityIfGreaterThan0(item);
+		if (item.sellIn < 0) {
+			decreaseQualityIfGreaterThan0(item);
+			decreaseQualityIfGreaterThan0(item);
+		}
 	}
 
 	private void decreaseQualityIfGreaterThan0(Item item) {
