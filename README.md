@@ -1,17 +1,33 @@
-# Intro
+# Gilded rose kata
 
-Ce repo contient le code du kata gilded rose, voir description ci-dessous.
-Les branches suivante proposent une résolution pas à pas du kata :
-- 0_init
-- 1_test_caracterisation
-- 2_refacto_step1
-- 3_refacto_step2
-- 4_new_feature_step1
-- 5_new_feature_step2
-- 6_terminated
+# Introduction
 
+Ce repository contient le code du kata gilded rose (voir ci-dessous sa [description originale](#orig-pres)).
 
-# Gilded Rose Refactoring Kata
+Les branches suivantes proposent une résolution pas à pas.
+Chaque étape permet d'illustrer certains principes du Software Crafsmanship   :
+- _0_init_
+- _1_test_caracterisation_ : ajouter des tests sur le code existant en mode "boite noire"
+- _2_refacto_step1_ : réorganiser la structure du code
+- _3_refacto_step2_ : extraire des méthodes, adopter un nommage explicite
+- _4_new_feature_step1_ : ajouter un test pour la nouvelle fonctionnalité
+- _5_new_feature_step2_ : développer le code fonctionnel pour faire passer le test
+- _6_terminated_ 
+
+## Contexte
+
+Vous rejoignez l'équipe Gilded Rose ("la rose dorée").
+
+Gilded Rose est une boutique qui vend des produits périssables.
+Chaque produit est identifié par un nom, le nombre de jours avant sa date limite (sellIn) , et une qualité.
+
+Vous devez reprendre le code de l'application servant à gérer ces produits, et ajouter une nouvelle fonctionnalité pour traiter les produits appelés "Conjured Mana Cake".
+
+La règle de gestion à implémenter est la suivante : "les produits Conjured Mana Cake" se dégradent 2 fois plus vite que les produits normaux.
+
+Vous disposez de plus d'information sur le contexte dans [ce document](GildedRoseRequirements_fr.md) ...mais attention, la spécification peut contenir des erreurs.
+
+# <a name="orig-pres"></a>Presentation originale du kata
 
 This Kata was originally created by Terry Hughes (http://twitter.com/#!/TerryHughes). It is already on GitHub [here](https://github.com/NotMyself/GildedRose). See also [Bobby Johnson's description of the kata](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/).
 
